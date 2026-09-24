@@ -151,37 +151,51 @@
   </div>
   <script>
     // Random background image. Any file in img/ whose zero-padded name falls
-    // inside the range is fair game: probe a random pick, and on a miss try
-    // another until one loads. MIN/MAX is the only thing to bump when the
-    // gallery grows past 99. .jpg is tried first, then .png.
-    // Applied to .bg (fixed layer), never to body — body does not scroll.
+    // inside the range is fair game. Probe several slots at once (gallery is
+    // sparse — serial 404s felt like a slow load). First hit wins.
+    // MIN/MAX is the only thing to bump when the gallery grows past 99.
+    // .jpg is tried first, then .png. Applied to .bg, never body.
     var IMG_MIN = 1;
     var IMG_MAX = 99;
+    var PROBE_BATCH = 8;
     var pad = function (n) { return ("00" + n).slice(-3); };
     var range = IMG_MAX - IMG_MIN + 1;
     var tried = {};
     var bg = document.querySelector(".bg");
-    function allTried() { return Object.keys(tried).length >= range; }
-    function pickImage() {
-      if (allTried()) return;                     // every slot is a miss: black
-      var n = IMG_MIN + Math.floor(Math.random() * range);
-      if (tried[n]) return pickImage();           // known-missing slot: re-pick
-      tried[n] = true;
+    var settled = false;
+    function use(n, ext) {
+      if (settled) return;
+      settled = true;
+      bg.style.backgroundImage = "url('img/" + pad(n) + "." + ext + "')";
+    }
+    function trySlot(n) {
       var probe = new Image();
-      probe.onload = function () {
-        bg.style.backgroundImage = "url('img/" + pad(n) + ".jpg')";
-      };
+      probe.onload = function () { use(n, "jpg"); };
       probe.onerror = function () {
         var alt = new Image();
-        alt.onload = function () {
-          bg.style.backgroundImage = "url('img/" + pad(n) + ".png')";
+        alt.onload = function () { use(n, "png"); };
+        alt.onerror = function () {
+          if (!settled && Object.keys(tried).length < range) pickBatch();
         };
-        alt.onerror = pickImage;                  // miss: try another number
         alt.src = "img/" + pad(n) + ".png";
       };
       probe.src = "img/" + pad(n) + ".jpg";
     }
-    pickImage();
+    function pickBatch() {
+      if (settled) return;
+      var batch = PROBE_BATCH;
+      var started = 0;
+      while (started < batch) {
+        var n = IMG_MIN + Math.floor(Math.random() * range);
+        if (tried[n]) continue;
+        tried[n] = true;
+        started++;
+        trySlot(n);
+        if (Object.keys(tried).length >= range) break;
+      }
+      if (started === 0 && Object.keys(tried).length >= range) return;
+    }
+    pickBatch();
   </script>
 </body>
 </html>
