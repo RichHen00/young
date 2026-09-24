@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slow Boats to China</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+<style>
+  html, body { height: 100%; margin: 0; }
+  body {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    color: #000;
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .text {
+    width: 90%;
+    max-width: 110ch;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 6vh 6vw;
+    background: rgba(255, 255, 255, 0.7);
+    line-height: 1.65;
+  }
+  .text p { margin: 0 0 1em; }
+  .text p:last-child { margin-bottom: 0; }
+  .text blockquote {
+    margin: 0 0 1em;
+    padding: 0.2em 0 0.2em 1.1em;
+    border-left: 2px solid rgba(0, 0, 0, 0.4);
+    font-style: italic;
+  }
+  .text .attrib {
+    margin: -0.4em 0 0;
+    font-size: 0.9em;
+    opacity: 0.85;
+  }
+</style>
+</head>
+<body>
+  <div class="text">
+    <p>In a London office of telex machines and shipping guides, Gavin Young seeks a way out. He hunts for the last of the cargo ships, chasing a window of opportunity that is already beginning to close.</p>
+    <blockquote>
+<p>‘We have practically no cargo–passenger ships in the East,’ John Swire said at lunch. If only, he said, I had tried to do this ten years ago….</p>
+<p>He would write to his offices throughout the East, asking his managers to look out for me and help where possible; I might need any help I could get if I was to avoid being stranded for weeks in some godforsaken place.</p>
+<p>Afterwards I walked out into King William Street and hurried past the quick-sandwich shops, the window full of telex appliances and the doors of Christian missionary societies, and took a tube to Green Park. In Cook’s, kind Mr Chattell gave me a shipping list, the ABC Shipping Guide, and like a squirrel with a nut, I carried it home and devoured it.</p>
+<p>About half of its pages was devoted to cruises: no good to me.</p>
+</blockquote>
+    <p class="attrib">— Slow Boats to China, GAVIN YOUNG</p>
+  </div>
+  <script>
+    // Random background image. Any file in img/ whose zero-padded name falls
+    // inside the range is fair game: probe a random pick, and on a miss try
+    // another until one loads. MIN/MAX is the only thing to bump when the
+    // gallery grows past 99. .jpg is tried first, then .png.
+    var IMG_MIN = 1;
+    var IMG_MAX = 99;
+    var pad = function (n) { return ("00" + n).slice(-3); };
+    var range = IMG_MAX - IMG_MIN + 1;
+    var tried = {};
+    function allTried() { return Object.keys(tried).length >= range; }
+    function pickImage() {
+      if (allTried()) return;                     // every slot is a miss: black
+      var n = IMG_MIN + Math.floor(Math.random() * range);
+      if (tried[n]) return pickImage();           // known-missing slot: re-pick
+      tried[n] = true;
+      var probe = new Image();
+      probe.onload = function () {
+        document.body.style.backgroundImage = "url('img/" + pad(n) + ".jpg')";
+      };
+      probe.onerror = function () {
+        var alt = new Image();
+        alt.onload = function () {
+          document.body.style.backgroundImage = "url('img/" + pad(n) + ".png')";
+        };
+        alt.onerror = pickImage;                  // miss: try another number
+        alt.src = "img/" + pad(n) + ".png";
+      };
+      probe.src = "img/" + pad(n) + ".jpg";
+    }
+    pickImage();
+  </script>
+</body>
+</html>
