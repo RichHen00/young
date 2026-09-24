@@ -3,76 +3,112 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Slow Boats to China</title>
+<title>The Boyhood Yearning for a Vanishing Horizon</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
 <style>
+  * { box-sizing: border-box; }
   html, body { height: 100%; margin: 0; }
   body {
-    font-family: "Avenir Next", "Nunito Sans", Helvetica, Arial, sans-serif;
-    font-weight: 300;
-    font-size: 17px;
-    letter-spacing: 0.2px;
-    color: #111;
+    font-family: "DM Sans", Arial, sans-serif;
+    font-weight: 400;
+    color: #fff;
     background-color: #000;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
     display: flex;
-    align-items: center;
+    align-items: safe center;
     justify-content: center;
+    padding: clamp(54px, 8vw, 112px) clamp(28px, 5vw, 72px);
+  }
+  @supports not (align-items: safe center) {
+    body { align-items: flex-start; }
   }
   .text {
-    width: 90%;
-    max-width: 110ch;
-    box-sizing: border-box;
+    width: min(100%, 1180px);
     margin: auto;
-    padding: 6vh 6vw;
-    background: rgba(255, 255, 255, 0.78);
+    padding: clamp(42px, 6vw, 72px) clamp(28px, 5vw, 72px);
+    background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 6px;
-    line-height: 1.7;
+  }
+  .text .eyebrow {
+    margin: 0 0 6px;
+    font-size: clamp(17px, 1.35vw, 22px);
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: -0.015em;
   }
   .text .title {
-    margin: 0 0 0.55em;
-    font-size: clamp(2rem, 5.5vw, 3.25rem);
-    line-height: 1.08;
+    max-width: 1050px;
+    margin: 0;
+    font-size: clamp(40px, 7.2vw, 50px);
+    line-height: 0.98;
     font-weight: 600;
-    letter-spacing: 0.02em;
+    letter-spacing: -0.055em;
   }
-  .text p { margin: 0 0 1em; }
-  .text p:last-child { margin-bottom: 0; }
+  @media (max-width: 640px) {
+    .text .title { line-height: 1.01; }
+  }
+  .text .intro {
+    max-width: 900px;
+    margin: clamp(34px, 0.2vw, 56px) 0 0;
+    font-size: clamp(17px, 1.8vw, 21px);
+    line-height: 1.42;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+  }
   .text blockquote {
-    margin: 1.25em 0 0;
+    max-width: 800px;
+    margin: clamp(20px, 8vw, 36px) 0 0;
     padding: 0;
     border: none;
-    font-style: italic;
-    font-size: 1.08em;
   }
-  .text .attrib {
-    margin: 0.85em 0 0;
-    font-size: 0.8em;
+  .text blockquote p {
+    max-width: none;
+    margin: 0 0 32px;
+    margin-left: 8%;
+    font-size: clamp(16px, 1.45vw, 18px);
+    line-height: 1.62;
     font-weight: 400;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    opacity: 0.7;
+    letter-spacing: -0.012em;
   }
-  .text blockquote p { letter-spacing: 0.1px; }
+  .text blockquote p:last-child { margin-bottom: 0; }
+  @media (min-width: 1100px) {
+    .text blockquote { margin-left: 4.5%; }
+  }
+  @media (max-width: 640px) {
+    body {
+      padding-top: 42px;
+      padding-bottom: 64px;
+      padding-left: clamp(28px, 5vw, 72px);
+      padding-right: clamp(28px, 5vw, 72px);
+      align-items: flex-start;
+    }
+    .text { padding-top: 42px; padding-bottom: 64px; }
+    .text .eyebrow { margin-bottom: 18px; }
+    .text .intro { margin-top: 30px; }
+    .text blockquote { margin-left: 0; margin-top: 36px; }
+    .text blockquote p { line-height: 1.55; margin-left: 8%; }
+  }
 </style>
 </head>
 <body>
   <div class="text">
-    <h1 class="title">Slow Boats to China</h1>
-    <p>A misty January night in Fowey. Two teenagers, driven by a hunger for distance, step onto the freezing deck of the Northgate. The ship is a cold, silent thing, waiting to carry them toward the Scheldt.</p>
+    <p class="eyebrow">The Wreckers’ Coast in summer</p>
+    <h1 class="title">The Boyhood Yearning for a Vanishing Horizon</h1>
+    <p class="intro">Young grows up on a coastline of salt-crusted stone and shipwrecked schooners. In the shadow of dim churches, a child's curiosity turns into a plan for escape.</p>
     <blockquote>
-<p>As a boy, I sat by myself nursing my dream of far places among the long black lines of rock, knobbly with mussels and limpets, like arthritic fingers, running out into the booming surf.</p>
-<p>This happened not long before my eighteenth birthday, when a school friend and I walked through the dead of a misty night to board a ship at a wharf in Fowey, a small Cornish river port. My friend’s father had arranged with the shipowners for us to be signed on to a 500-ton coaster, the Northgate, out of Hull.</p>
-<p>We went down to Fowey in January, the month some sailors refer to as ‘between dog and wolf’, and it was one of the wildest Januaries for years. The berthed ship seemed as dead as an icicle. I can still hear the ring of our hesitant heels on the freezing metal deck, our whispers in the dark, and at last the wavering cry of ‘Who’s there?’ from the skylight.</p>
+<p>It was a simple idea: take a series of ships of many sizes and kinds; go where they lead for a few months; see what happens. It was an adaptation of the old idea of Running Away to Sea, a boyhood yearning bred of tales, marvellous tales Of ships and stars and isles where good men rest.</p>
+<p>No doubt my dream of the sea was born during the long summers I spent as a child in what I still think of as the oldest-feeling, most soul-subduing and cosily creepy part of England. This is the Wreckers’ Coast: a place of buzzards and seals and effigies of knights in dim, half-lost churches, where seas pound into cliffbound bays.</p>
 </blockquote>
-    <p class="attrib">— GAVIN YOUNG</p>
   </div>
   <script>
     // Random background image. Any file in img/ whose zero-padded name falls
