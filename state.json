@@ -1,15 +1,15 @@
 {
   "current": {
-    "label": "The Obsolescence of the Lone Traveller",
-    "kicker": "A puce knitted tie like a hairnet",
+    "label": "The Vanishing Routes of the East",
+    "kicker": "Glass cases and ship's bells in the City",
     "paragraphs": [
-      21,
-      24
+      29,
+      32
     ],
-    "note_words": 25,
-    "excerpt_words": 129,
-    "passage_chars": 1478,
-    "built": "2026-09-24T20:00:30+00:00",
+    "note_words": 30,
+    "excerpt_words": 105,
+    "passage_chars": 1694,
+    "built": "2026-09-24T20:06:04+00:00",
     "file": "index.html"
   },
   "history": [
@@ -75,6 +75,24 @@
       "excerpt_words": 95,
       "words": 29,
       "built": "2026-09-24T19:56:31+00:00"
+    },
+    {
+      "n": 8,
+      "file": "tmp/008_index.html",
+      "label": "The Obsolescence of the Lone Traveller",
+      "note_words": 25,
+      "excerpt_words": 129,
+      "words": 25,
+      "built": "2026-09-24T20:00:30+00:00"
+    },
+    {
+      "n": 9,
+      "file": "tmp/009_index.html",
+      "label": "The Ghostly Weight of Imperial Trade",
+      "note_words": 27,
+      "excerpt_words": 109,
+      "words": 27,
+      "built": "2026-09-24T20:00:36+00:00"
     }
   ],
   "source": {
@@ -106,7 +124,15 @@
     20,
     21,
     22,
-    23
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
   ],
   "output_hashes": [
     "6fd72e8a5ab2bca5856dff7188b419d378316155",
@@ -116,8 +142,10 @@
     "ff71ed194b643245e0d0fc1a3b75f9d805b8a223",
     "66f24bdcc0da845a7ddd63bf03d9a402d23a66d0",
     "018a684c6f22d7372430382bf923ef91ecba60dc",
-    "c0457aa807ee0dbf6f6bdd9525682cb2dd7dd729"
+    "c0457aa807ee0dbf6f6bdd9525682cb2dd7dd729",
+    "c2f21f73f3cf90753d0ee41ab0db027d395507ed",
+    "4b1257a0055c20663a3f4df260bc8e940739e9f9"
   ],
-  "cursor": 24,
+  "cursor": 32,
   "cycle": 0
 }
