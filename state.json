@@ -1,15 +1,15 @@
 {
   "current": {
-    "label": "The Vanishing Routes of the East",
-    "kicker": "Glass cases and ship's bells in the City",
+    "label": "The Gamble of the Open Itinerary",
+    "kicker": "A cheap atlas and a ballpoint pen",
     "paragraphs": [
-      29,
-      32
+      33,
+      35
     ],
     "note_words": 30,
-    "excerpt_words": 105,
-    "passage_chars": 1694,
-    "built": "2026-09-24T20:06:04+00:00",
+    "excerpt_words": 116,
+    "passage_chars": 1903,
+    "built": "2026-09-24T20:06:11+00:00",
     "file": "index.html"
   },
   "history": [
@@ -93,6 +93,15 @@
       "excerpt_words": 109,
       "words": 27,
       "built": "2026-09-24T20:00:36+00:00"
+    },
+    {
+      "n": 10,
+      "file": "tmp/010_index.html",
+      "label": "The Vanishing Routes of the East",
+      "note_words": 30,
+      "excerpt_words": 105,
+      "words": 30,
+      "built": "2026-09-24T20:06:04+00:00"
     }
   ],
   "source": {
@@ -132,7 +141,10 @@
     28,
     29,
     30,
-    31
+    31,
+    32,
+    33,
+    34
   ],
   "output_hashes": [
     "6fd72e8a5ab2bca5856dff7188b419d378316155",
@@ -144,8 +156,9 @@
     "018a684c6f22d7372430382bf923ef91ecba60dc",
     "c0457aa807ee0dbf6f6bdd9525682cb2dd7dd729",
     "c2f21f73f3cf90753d0ee41ab0db027d395507ed",
-    "4b1257a0055c20663a3f4df260bc8e940739e9f9"
+    "4b1257a0055c20663a3f4df260bc8e940739e9f9",
+    "e6a2a5bffd106cef98e2a533bd306f638f3e5b18"
   ],
-  "cursor": 32,
+  "cursor": 35,
   "cycle": 0
 }
