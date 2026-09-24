@@ -1,15 +1,15 @@
 {
   "current": {
-    "label": "The Obsolescence of the Lone Traveler",
-    "kicker": "A puce knitted tie and ruins",
+    "label": "The Obsolescence of the Lone Traveller",
+    "kicker": "A puce knitted tie like a hairnet",
     "paragraphs": [
-      17,
-      20
+      21,
+      24
     ],
-    "note_words": 29,
-    "excerpt_words": 95,
-    "passage_chars": 1472,
-    "built": "2026-09-24T19:56:31+00:00",
+    "note_words": 25,
+    "excerpt_words": 129,
+    "passage_chars": 1478,
+    "built": "2026-09-24T20:00:30+00:00",
     "file": "index.html"
   },
   "history": [
@@ -66,6 +66,15 @@
       "excerpt_words": 121,
       "words": 27,
       "built": "2026-09-24T19:36:22+00:00"
+    },
+    {
+      "n": 7,
+      "file": "tmp/007_index.html",
+      "label": "The Obsolescence of the Lone Traveler",
+      "note_words": 29,
+      "excerpt_words": 95,
+      "words": 29,
+      "built": "2026-09-24T19:56:31+00:00"
     }
   ],
   "source": {
@@ -93,7 +102,11 @@
     16,
     17,
     18,
-    19
+    19,
+    20,
+    21,
+    22,
+    23
   ],
   "output_hashes": [
     "6fd72e8a5ab2bca5856dff7188b419d378316155",
@@ -102,8 +115,9 @@
     "263b5110491a42fd04f5d1b2ffd44fc02dd8aa72",
     "ff71ed194b643245e0d0fc1a3b75f9d805b8a223",
     "66f24bdcc0da845a7ddd63bf03d9a402d23a66d0",
-    "018a684c6f22d7372430382bf923ef91ecba60dc"
+    "018a684c6f22d7372430382bf923ef91ecba60dc",
+    "c0457aa807ee0dbf6f6bdd9525682cb2dd7dd729"
   ],
-  "cursor": 20,
+  "cursor": 24,
   "cycle": 0
 }
