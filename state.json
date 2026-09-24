@@ -1,15 +1,15 @@
 {
   "current": {
-    "label": "The Cold Wake of a Childhood Dream",
+    "label": "The Indifference of the Ship",
     "kicker": "January, between dog and wolf",
     "paragraphs": [
-      10,
-      12
+      13,
+      16
     ],
     "note_words": 29,
-    "excerpt_words": 105,
-    "passage_chars": 1611,
-    "built": "2026-09-24T18:19:56+02:00",
+    "excerpt_words": 109,
+    "passage_chars": 1889,
+    "built": "2026-09-24T18:27:39+02:00",
     "file": "index.html"
   },
   "history": [
@@ -48,6 +48,15 @@
       "excerpt_words": 105,
       "words": 25,
       "built": "2026-09-24T18:06:27+02:00"
+    },
+    {
+      "n": 5,
+      "file": "tmp/005_index.html",
+      "label": "The Cold Wake of a Childhood Dream",
+      "note_words": 29,
+      "excerpt_words": 105,
+      "words": 29,
+      "built": "2026-09-24T18:19:56+02:00"
     }
   ],
   "source": {
@@ -67,15 +76,20 @@
     8,
     9,
     10,
-    11
+    11,
+    12,
+    13,
+    14,
+    15
   ],
   "output_hashes": [
     "9822e5cc9a92d2df781df2ca9742852f7279495d",
     "e02c9f69e81b2c83f58432c9bce3cdf412a5388c",
     "d2df55dc078fb5cab83b30412d72841ac51c2362",
     "5a3c766c4cd7b357d134ad58f14b0c9d79e06e63",
-    "92b45dd92ea60eed3097e90b25a761c7674a7eac"
+    "92b45dd92ea60eed3097e90b25a761c7674a7eac",
+    "cbe6683c4c89f625fa1218360d2916a722432486"
   ],
-  "cursor": 12,
+  "cursor": 16,
   "cycle": 0
 }
