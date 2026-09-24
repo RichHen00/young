@@ -23,22 +23,16 @@
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
   }
-  /* Photo never scrolls: fixed layer pinned to the layout viewport on all four
-     sides (not 100dvh — on iOS Safari dvh ≠ the box fixed elements resolve to
-     when the toolbar animates, which left black bars top/bottom). JS sets
-     .bg background-image (not body) so document scroll cannot move it. */
+  /* Photo never scrolls: fixed layer with only top/right/bottom/left: 0 —
+     WebKit stretches that to the visual viewport. Do NOT add min-height
+     (100vh/dvh/lvh): it fights bottom: 0 during toolbar animation and leaves
+     black bars. JS sets .bg background-image (not body). */
   .bg {
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    width: auto;
-    height: auto;
-    min-width: 100vw;
-    min-height: 100vh;
-    min-height: 100dvh;
-    min-height: 100lvh;
     z-index: 0;
     background-color: #000;
     background-size: cover;
