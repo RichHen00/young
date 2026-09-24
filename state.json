@@ -2,13 +2,13 @@
   "current": {
     "label": "Slow Boats to China",
     "paragraphs": [
-      9,
-      9
+      10,
+      12
     ],
-    "note_words": 39,
-    "excerpt_words": 146,
-    "passage_chars": 1844,
-    "built": "2026-09-24T16:38:36+02:00",
+    "note_words": 36,
+    "excerpt_words": 162,
+    "passage_chars": 1611,
+    "built": "2026-09-24T16:38:54+02:00",
     "file": "index.html"
   },
   "history": [
@@ -38,6 +38,15 @@
       "excerpt_words": 209,
       "words": 37,
       "built": "2026-09-24T16:35:37+02:00"
+    },
+    {
+      "n": 25,
+      "file": "tmp/025_index.html",
+      "label": "Slow Boats to China",
+      "note_words": 39,
+      "excerpt_words": 146,
+      "words": 39,
+      "built": "2026-09-24T16:38:36+02:00"
     }
   ],
   "source": {
@@ -54,14 +63,18 @@
     5,
     6,
     7,
-    8
+    8,
+    9,
+    10,
+    11
   ],
   "output_hashes": [
     "c58dbaacaa9b3b4f736a9211cc5a477b35be6c80",
     "351794b09a40230cb08866be7d06a4564800a568",
     "4a70cc10adf3d7c83463e8bf2e0d031d2efeabe0",
-    "9a2f5d2a831f057cdad2bacfb90d7463bc9e323b"
+    "9a2f5d2a831f057cdad2bacfb90d7463bc9e323b",
+    "1752725e0e5875a8acef02afa1dd4fb818a0e941"
   ],
-  "cursor": 9,
+  "cursor": 12,
   "cycle": 0
 }
