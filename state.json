@@ -1,18 +1,64 @@
 {
   "current": {
-    "label": "The Boyhood Yearning for the Wreckers’ Coast",
-    "kicker": "Between Devon’s Hartland Point and Cornwall’s Fire Point",
+    "label": "The Pride of the Uninitiated",
+    "kicker": "January, between dog and wolf",
     "paragraphs": [
-      1,
-      3
+      13,
+      16
     ],
-    "note_words": 28,
-    "excerpt_words": 126,
-    "passage_chars": 1341,
-    "built": "2026-09-24T17:39:37+00:00",
+    "note_words": 27,
+    "excerpt_words": 121,
+    "passage_chars": 1889,
+    "built": "2026-09-24T19:36:22+00:00",
     "file": "index.html"
   },
-  "history": [],
+  "history": [
+    {
+      "n": 1,
+      "file": "tmp/001_index.html",
+      "label": "The Boyhood Yearning for the Wreckers’ Coast",
+      "note_words": 28,
+      "excerpt_words": 126,
+      "words": 28,
+      "built": "2026-09-24T17:39:37+00:00"
+    },
+    {
+      "n": 2,
+      "file": "tmp/002_index.html",
+      "label": "The Persistent Aura of the Wreckers' Coast",
+      "note_words": 29,
+      "excerpt_words": 84,
+      "words": 29,
+      "built": "2026-09-24T18:15:08+00:00"
+    },
+    {
+      "n": 3,
+      "file": "tmp/003_index.html",
+      "label": "The Architecture of a Childhood Obsession",
+      "note_words": 28,
+      "excerpt_words": 105,
+      "words": 28,
+      "built": "2026-09-24T18:52:19+00:00"
+    },
+    {
+      "n": 4,
+      "file": "tmp/004_index.html",
+      "label": "The Gravity of a Static Place",
+      "note_words": 28,
+      "excerpt_words": 90,
+      "words": 28,
+      "built": "2026-09-24T18:55:53+00:00"
+    },
+    {
+      "n": 5,
+      "file": "tmp/005_index.html",
+      "label": "The Cold Weight of First Ambitions",
+      "note_words": 28,
+      "excerpt_words": 117,
+      "words": 28,
+      "built": "2026-09-24T18:56:04+00:00"
+    }
+  ],
   "source": {
     "title": "Slow Boats to China",
     "author": "GAVIN YOUNG",
@@ -21,11 +67,29 @@
   "used_paragraphs": [
     0,
     1,
-    2
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
   ],
   "output_hashes": [
-    "6fd72e8a5ab2bca5856dff7188b419d378316155"
+    "6fd72e8a5ab2bca5856dff7188b419d378316155",
+    "f066d7c28a31b55992b66e209be2e4d09ca97ca3",
+    "2fe7eb37c43f8e03a6d9183f25ab342c5216e5f7",
+    "263b5110491a42fd04f5d1b2ffd44fc02dd8aa72",
+    "ff71ed194b643245e0d0fc1a3b75f9d805b8a223",
+    "66f24bdcc0da845a7ddd63bf03d9a402d23a66d0"
   ],
-  "cursor": 3,
+  "cursor": 16,
   "cycle": 0
 }
