@@ -1,15 +1,15 @@
 {
   "current": {
-    "label": "The Rituals of Anticipated Disaster",
-    "kicker": "A metal suitcase and a money belt",
+    "label": "The Rituals of Permanent Departure",
+    "kicker": "August morning at London airport",
     "paragraphs": [
-      36,
-      38
+      39,
+      41
     ],
-    "note_words": 30,
-    "excerpt_words": 104,
-    "passage_chars": 1690,
-    "built": "25-09-2026 04:00",
+    "note_words": 28,
+    "excerpt_words": 95,
+    "passage_chars": 1251,
+    "built": "26-09-2026 04:00",
     "file": "index.html"
   },
   "history": [
@@ -111,6 +111,15 @@
       "excerpt_words": 116,
       "words": 30,
       "built": "2026-09-24T20:06:11+00:00"
+    },
+    {
+      "n": 13,
+      "file": "tmp/013_index.html",
+      "label": "The Rituals of Anticipated Disaster",
+      "note_words": 30,
+      "excerpt_words": 104,
+      "words": 30,
+      "built": "25-09-2026 04:00"
     }
   ],
   "source": {
@@ -156,7 +165,10 @@
     34,
     35,
     36,
-    37
+    37,
+    38,
+    39,
+    40
   ],
   "output_hashes": [
     "6fd72e8a5ab2bca5856dff7188b419d378316155",
@@ -170,8 +182,9 @@
     "c2f21f73f3cf90753d0ee41ab0db027d395507ed",
     "4b1257a0055c20663a3f4df260bc8e940739e9f9",
     "e6a2a5bffd106cef98e2a533bd306f638f3e5b18",
-    "a1788cb782f482f1f084fd523f7b7cdccb0f24eb"
+    "a1788cb782f482f1f084fd523f7b7cdccb0f24eb",
+    "d5a0b09c5198ba9f453c4f0b43729e9860686676"
   ],
-  "cursor": 38,
+  "cursor": 41,
   "cycle": 0
 }
