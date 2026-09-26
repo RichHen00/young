@@ -1,15 +1,15 @@
 {
   "current": {
-    "label": "The Persistence of a Doomed Horizon",
-    "kicker": "Cold, rainy days on the Wreckers’ Coast",
+    "label": "The Geography of a Longing",
+    "kicker": "Damp floorboards and old suitcases",
     "paragraphs": [
-      4,
-      5
+      6,
+      8
     ],
-    "note_words": 28,
-    "excerpt_words": 125,
-    "passage_chars": 1242,
-    "built": "2026-09-26T14:13:39+00:00",
+    "note_words": 27,
+    "excerpt_words": 115,
+    "passage_chars": 1731,
+    "built": "2026-09-26T14:13:47+00:00",
     "file": "index.html"
   },
   "history": [
@@ -32,6 +32,16 @@
       "excerpt_words": 117,
       "words": 29,
       "built": "2026-09-26T14:13:30+00:00"
+    },
+    {
+      "n": 4,
+      "file": "tmp/0004.html",
+      "label": "The Persistence of a Doomed Horizon",
+      "eyebrow": "Cold, rainy days on the Wreckers’ Coast",
+      "note_words": 28,
+      "excerpt_words": 125,
+      "words": 28,
+      "built": "2026-09-26T14:13:39+00:00"
     }
   ],
   "source": {
@@ -44,12 +54,16 @@
     1,
     2,
     3,
-    4
+    4,
+    5,
+    6,
+    7
   ],
   "output_hashes": [
     "c2d3c87ae8b2483c2cee9334cdbc902aeb952ac8",
-    "465786ce303298f4cab89872f55c335a4cadb0d3"
+    "465786ce303298f4cab89872f55c335a4cadb0d3",
+    "bb8020f2e96dce84fec5020a790eeef234ce2d5a"
   ],
-  "cursor": 5,
+  "cursor": 8,
   "cycle": 0
 }
