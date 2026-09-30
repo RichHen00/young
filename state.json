@@ -1,15 +1,15 @@
 {
   "current": {
-    "label": "The Indifference of the Vessel",
-    "kicker": "Freezing metal decks in January",
+    "label": "The Death of the Lone Traveller",
+    "kicker": "A puce knitted tie and ruins",
     "paragraphs": [
-      13,
-      16
+      17,
+      20
     ],
-    "note_words": 29,
-    "excerpt_words": 121,
-    "passage_chars": 1889,
-    "built": "2026-09-29T03:00:08+00:00",
+    "note_words": 26,
+    "excerpt_words": 119,
+    "passage_chars": 1472,
+    "built": "2026-09-30T03:00:14+00:00",
     "file": "index.html"
   },
   "history": [
@@ -62,6 +62,16 @@
       "excerpt_words": 105,
       "words": 27,
       "built": "2026-09-28T03:00:09+00:00"
+    },
+    {
+      "n": 5,
+      "file": "tmp/0005.html",
+      "label": "The Indifference of the Vessel",
+      "eyebrow": "Freezing metal decks in January",
+      "note_words": 29,
+      "excerpt_words": 121,
+      "words": 29,
+      "built": "2026-09-29T03:00:08+00:00"
     }
   ],
   "source": {
@@ -85,7 +95,11 @@
     12,
     13,
     14,
-    15
+    15,
+    16,
+    17,
+    18,
+    19
   ],
   "output_hashes": [
     "63327c4620d4badb87f06ccef708f5bcf36d6b4b",
@@ -93,8 +107,9 @@
     "efdae02615db8d9eac1954e505f5ceb278b31b41",
     "0572eb5275c8f118ef1a038842458665641b2c2a",
     "6b29f44d8d0b052be4b0b3b75ac6b89391bfacce",
-    "704fd5e9485e41cbaf7b58f10d9eb6d6aa1f7e5e"
+    "704fd5e9485e41cbaf7b58f10d9eb6d6aa1f7e5e",
+    "cb505ea88e5f266e6d13beeaceec2bfcfc781b07"
   ],
-  "cursor": 16,
+  "cursor": 20,
   "cycle": 0
 }
