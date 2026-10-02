@@ -1,15 +1,15 @@
 {
   "current": {
-    "label": "The Death of the Lone Traveller",
-    "kicker": "A puce knitted tie like a hairnet",
+    "label": "The Obsolescence of the Slow Route",
+    "kicker": "Glass cases and old ship's bells",
     "paragraphs": [
-      21,
-      24
+      25,
+      28
     ],
-    "note_words": 25,
-    "excerpt_words": 104,
-    "passage_chars": 1478,
-    "built": "2026-10-01T03:00:07+00:00",
+    "note_words": 29,
+    "excerpt_words": 114,
+    "passage_chars": 1422,
+    "built": "2026-10-02T03:00:08+00:00",
     "file": "index.html"
   },
   "history": [
@@ -82,6 +82,16 @@
       "excerpt_words": 119,
       "words": 26,
       "built": "2026-09-30T03:00:14+00:00"
+    },
+    {
+      "n": 7,
+      "file": "tmp/0007.html",
+      "label": "The Death of the Lone Traveller",
+      "eyebrow": "A puce knitted tie like a hairnet",
+      "note_words": 25,
+      "excerpt_words": 104,
+      "words": 25,
+      "built": "2026-10-01T03:00:07+00:00"
     }
   ],
   "source": {
@@ -113,7 +123,11 @@
     20,
     21,
     22,
-    23
+    23,
+    24,
+    25,
+    26,
+    27
   ],
   "output_hashes": [
     "63327c4620d4badb87f06ccef708f5bcf36d6b4b",
@@ -123,8 +137,9 @@
     "6b29f44d8d0b052be4b0b3b75ac6b89391bfacce",
     "704fd5e9485e41cbaf7b58f10d9eb6d6aa1f7e5e",
     "cb505ea88e5f266e6d13beeaceec2bfcfc781b07",
-    "0efbf099ff70c9de9dac73a295b8d168b4f279a2"
+    "0efbf099ff70c9de9dac73a295b8d168b4f279a2",
+    "bfe974cf77876421bf674241aa3f0477e38de3d9"
   ],
-  "cursor": 24,
+  "cursor": 28,
   "cycle": 0
 }
