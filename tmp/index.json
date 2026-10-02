@@ -55,6 +55,13 @@
       "eyebrow": "A puce knitted tie like a hairnet",
       "label": "The Death of the Lone Traveller",
       "built": "2026-10-01T03:00:07+00:00"
+    },
+    {
+      "n": 8,
+      "file": "tmp/0008.html",
+      "eyebrow": "Glass cases and old ship's bells",
+      "label": "The Obsolescence of the Slow Route",
+      "built": "2026-10-02T03:00:08+00:00"
     }
   ]
 }
