@@ -62,6 +62,13 @@
       "eyebrow": "Glass cases and old ship's bells",
       "label": "The Obsolescence of the Slow Route",
       "built": "2026-10-02T03:00:08+00:00"
+    },
+    {
+      "n": 9,
+      "file": "tmp/0009.html",
+      "eyebrow": "Glass cases and ship's bells in London",
+      "label": "The Vanishing Routes of the Cargo Ship",
+      "built": "2026-10-02T07:23:07+00:00"
     }
   ]
 }

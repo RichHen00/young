@@ -1,15 +1,15 @@
 {
   "current": {
-    "label": "The Vanishing Routes of the Cargo Ship",
-    "kicker": "Glass cases and ship's bells in London",
+    "label": "The Gamble of the Unplanned Route",
+    "kicker": "A cheap atlas and a ballpoint pen",
     "paragraphs": [
-      29,
-      32
+      33,
+      35
     ],
-    "note_words": 29,
-    "excerpt_words": 111,
-    "passage_chars": 1694,
-    "built": "2026-10-02T07:23:07+00:00",
+    "note_words": 28,
+    "excerpt_words": 112,
+    "passage_chars": 1903,
+    "built": "2026-10-03T03:00:08+00:00",
     "file": "index.html"
   },
   "history": [
@@ -102,6 +102,16 @@
       "excerpt_words": 114,
       "words": 29,
       "built": "2026-10-02T03:00:08+00:00"
+    },
+    {
+      "n": 9,
+      "file": "tmp/0009.html",
+      "label": "The Vanishing Routes of the Cargo Ship",
+      "eyebrow": "Glass cases and ship's bells in London",
+      "note_words": 29,
+      "excerpt_words": 111,
+      "words": 29,
+      "built": "2026-10-02T07:23:07+00:00"
     }
   ],
   "source": {
@@ -141,7 +151,10 @@
     28,
     29,
     30,
-    31
+    31,
+    32,
+    33,
+    34
   ],
   "output_hashes": [
     "63327c4620d4badb87f06ccef708f5bcf36d6b4b",
@@ -153,8 +166,9 @@
     "cb505ea88e5f266e6d13beeaceec2bfcfc781b07",
     "0efbf099ff70c9de9dac73a295b8d168b4f279a2",
     "bfe974cf77876421bf674241aa3f0477e38de3d9",
-    "cb087cc5a6cf106f7507030caa4edf595dce5deb"
+    "cb087cc5a6cf106f7507030caa4edf595dce5deb",
+    "d63c74f139b4133df27551cc3781ffe1af83887a"
   ],
-  "cursor": 32,
+  "cursor": 35,
   "cycle": 0
 }
