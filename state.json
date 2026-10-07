@@ -1,15 +1,15 @@
 {
   "current": {
-    "label": "The False Prophecy of the Scheduled Hour",
-    "kicker": "A glass of Fernet Branca in the lounge",
+    "label": "The Friction of the Ideal",
+    "kicker": "Crowds of blond tourists in shorts",
     "paragraphs": [
-      42,
-      44
+      45,
+      47
     ],
     "note_words": 29,
-    "excerpt_words": 120,
-    "passage_chars": 1749,
-    "built": "2026-10-06T03:00:09+00:00",
+    "excerpt_words": 96,
+    "passage_chars": 1599,
+    "built": "2026-10-07T03:00:08+00:00",
     "file": "index.html"
   },
   "history": [
@@ -142,6 +142,16 @@
       "excerpt_words": 124,
       "words": 29,
       "built": "2026-10-05T03:00:08+00:00"
+    },
+    {
+      "n": 13,
+      "file": "tmp/0013.html",
+      "label": "The False Prophecy of the Scheduled Hour",
+      "eyebrow": "A glass of Fernet Branca in the lounge",
+      "note_words": 29,
+      "excerpt_words": 120,
+      "words": 29,
+      "built": "2026-10-06T03:00:09+00:00"
     }
   ],
   "source": {
@@ -193,7 +203,10 @@
     40,
     41,
     42,
-    43
+    43,
+    44,
+    45,
+    46
   ],
   "output_hashes": [
     "63327c4620d4badb87f06ccef708f5bcf36d6b4b",
@@ -209,8 +222,9 @@
     "d63c74f139b4133df27551cc3781ffe1af83887a",
     "05cd28373a284beb665c9ef341e6a631913fb6e8",
     "6a736d7ba629e65f77292d9dd01eb1b24bcf0aa7",
-    "a01e1d8d5e638a28cea7c771d2f653458c5b67b2"
+    "a01e1d8d5e638a28cea7c771d2f653458c5b67b2",
+    "72de8f404e2ded00ea70069fdd8d56d7aff88d59"
   ],
-  "cursor": 44,
+  "cursor": 47,
   "cycle": 0
 }
