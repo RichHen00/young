@@ -1,15 +1,15 @@
 {
   "current": {
-    "label": "The Final Threshold of Europe",
-    "kicker": "A ticket and an ironclad suitcase",
+    "label": "The Luxury of Slipping Into Neutral",
+    "kicker": "A marble-topped bar in Athens",
     "paragraphs": [
-      48,
-      50
+      51,
+      52
     ],
-    "note_words": 27,
-    "excerpt_words": 73,
-    "passage_chars": 1279,
-    "built": "2026-10-08T03:00:08+00:00",
+    "note_words": 28,
+    "excerpt_words": 114,
+    "passage_chars": 1646,
+    "built": "2026-10-09T03:00:09+00:00",
     "file": "index.html"
   },
   "history": [
@@ -162,6 +162,16 @@
       "excerpt_words": 96,
       "words": 29,
       "built": "2026-10-07T03:00:08+00:00"
+    },
+    {
+      "n": 15,
+      "file": "tmp/0015.html",
+      "label": "The Final Threshold of Europe",
+      "eyebrow": "A ticket and an ironclad suitcase",
+      "note_words": 27,
+      "excerpt_words": 73,
+      "words": 27,
+      "built": "2026-10-08T03:00:08+00:00"
     }
   ],
   "source": {
@@ -219,7 +229,9 @@
     46,
     47,
     48,
-    49
+    49,
+    50,
+    51
   ],
   "output_hashes": [
     "63327c4620d4badb87f06ccef708f5bcf36d6b4b",
@@ -237,8 +249,9 @@
     "6a736d7ba629e65f77292d9dd01eb1b24bcf0aa7",
     "a01e1d8d5e638a28cea7c771d2f653458c5b67b2",
     "72de8f404e2ded00ea70069fdd8d56d7aff88d59",
-    "2799605af875b053eac1586d04f44fe29af0b542"
+    "2799605af875b053eac1586d04f44fe29af0b542",
+    "4e43f027bea92d6bc86c6600b74536c249d6c23e"
   ],
-  "cursor": 50,
+  "cursor": 52,
   "cycle": 0
 }
