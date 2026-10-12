@@ -1,15 +1,15 @@
 {
   "current": {
-    "label": "The Performance of Permanence",
-    "kicker": "August heat and the scent of ouzo",
+    "label": "The Grotesque Parody of Departure",
+    "kicker": "A pier in Piraeus, under the sunlight",
     "paragraphs": [
-      56,
-      57
+      58,
+      61
     ],
     "note_words": 28,
-    "excerpt_words": 107,
-    "passage_chars": 1355,
-    "built": "2026-10-11T03:00:08+00:00",
+    "excerpt_words": 112,
+    "passage_chars": 1721,
+    "built": "2026-10-12T03:00:08+00:00",
     "file": "index.html"
   },
   "history": [
@@ -192,6 +192,16 @@
       "excerpt_words": 71,
       "words": 29,
       "built": "2026-10-10T03:00:09+00:00"
+    },
+    {
+      "n": 18,
+      "file": "tmp/0018.html",
+      "label": "The Performance of Permanence",
+      "eyebrow": "August heat and the scent of ouzo",
+      "note_words": 28,
+      "excerpt_words": 107,
+      "words": 28,
+      "built": "2026-10-11T03:00:08+00:00"
     }
   ],
   "source": {
@@ -256,7 +266,11 @@
     53,
     54,
     55,
-    56
+    56,
+    57,
+    58,
+    59,
+    60
   ],
   "output_hashes": [
     "63327c4620d4badb87f06ccef708f5bcf36d6b4b",
@@ -277,8 +291,9 @@
     "2799605af875b053eac1586d04f44fe29af0b542",
     "4e43f027bea92d6bc86c6600b74536c249d6c23e",
     "e1bbb804b28262f2fdb479c8008cef5778cb3446",
-    "8b444a6906ff7ee096460c79e2c04350edec2c6c"
+    "8b444a6906ff7ee096460c79e2c04350edec2c6c",
+    "b4e4bbf5ce20dda2006b726b787fe6e1865be9a6"
   ],
-  "cursor": 57,
+  "cursor": 61,
   "cycle": 0
 }
