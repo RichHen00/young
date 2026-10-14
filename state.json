@@ -1,15 +1,15 @@
 {
   "current": {
-    "label": "The Chilling Distance Between Countrymen",
-    "kicker": "A shooting stick and a silk scarf",
+    "label": "The Art of Instinct and Order",
+    "kicker": "White shoes on a Greek quay",
     "paragraphs": [
-      62,
-      67
+      68,
+      71
     ],
-    "note_words": 27,
-    "excerpt_words": 129,
-    "passage_chars": 1439,
-    "built": "2026-10-13T03:00:09+00:00",
+    "note_words": 28,
+    "excerpt_words": 120,
+    "passage_chars": 1605,
+    "built": "2026-10-14T03:00:09+00:00",
     "file": "index.html"
   },
   "history": [
@@ -212,6 +212,16 @@
       "excerpt_words": 112,
       "words": 28,
       "built": "2026-10-12T03:00:08+00:00"
+    },
+    {
+      "n": 20,
+      "file": "tmp/0020.html",
+      "label": "The Chilling Distance Between Countrymen",
+      "eyebrow": "A shooting stick and a silk scarf",
+      "note_words": 27,
+      "excerpt_words": 129,
+      "words": 27,
+      "built": "2026-10-13T03:00:09+00:00"
     }
   ],
   "source": {
@@ -286,7 +296,11 @@
     63,
     64,
     65,
-    66
+    66,
+    67,
+    68,
+    69,
+    70
   ],
   "output_hashes": [
     "63327c4620d4badb87f06ccef708f5bcf36d6b4b",
@@ -309,8 +323,9 @@
     "e1bbb804b28262f2fdb479c8008cef5778cb3446",
     "8b444a6906ff7ee096460c79e2c04350edec2c6c",
     "b4e4bbf5ce20dda2006b726b787fe6e1865be9a6",
-    "e4ebfcd2e8b77f7b1b0afe6e7431398ee871f141"
+    "e4ebfcd2e8b77f7b1b0afe6e7431398ee871f141",
+    "f4c0a9c1f74a1a508b79b8e830589ff8b0136d08"
   ],
-  "cursor": 67,
+  "cursor": 71,
   "cycle": 0
 }
