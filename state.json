@@ -1,15 +1,15 @@
 {
   "current": {
-    "label": "The Shared Idiom of British Discomfort",
-    "kicker": "Olive-drab armchairs and stifling heat",
+    "label": "The Geography of Ruin",
+    "kicker": "Straw hats and baggy grey trousers",
     "paragraphs": [
-      72,
-      74
+      75,
+      77
     ],
     "note_words": 26,
-    "excerpt_words": 108,
-    "passage_chars": 1290,
-    "built": "2026-10-15T03:00:09+00:00",
+    "excerpt_words": 95,
+    "passage_chars": 1700,
+    "built": "2026-10-16T03:00:08+00:00",
     "file": "index.html"
   },
   "history": [
@@ -232,6 +232,16 @@
       "excerpt_words": 120,
       "words": 28,
       "built": "2026-10-14T03:00:09+00:00"
+    },
+    {
+      "n": 22,
+      "file": "tmp/0022.html",
+      "label": "The Shared Idiom of British Discomfort",
+      "eyebrow": "Olive-drab armchairs and stifling heat",
+      "note_words": 26,
+      "excerpt_words": 108,
+      "words": 26,
+      "built": "2026-10-15T03:00:09+00:00"
     }
   ],
   "source": {
@@ -313,7 +323,10 @@
     70,
     71,
     72,
-    73
+    73,
+    74,
+    75,
+    76
   ],
   "output_hashes": [
     "63327c4620d4badb87f06ccef708f5bcf36d6b4b",
@@ -338,8 +351,9 @@
     "b4e4bbf5ce20dda2006b726b787fe6e1865be9a6",
     "e4ebfcd2e8b77f7b1b0afe6e7431398ee871f141",
     "f4c0a9c1f74a1a508b79b8e830589ff8b0136d08",
-    "64f993a2447d5387bb87b5eda5eb2d826bb3d07e"
+    "64f993a2447d5387bb87b5eda5eb2d826bb3d07e",
+    "beaaea81222583f062c3800a0ad2efb7c9472bc0"
   ],
-  "cursor": 74,
+  "cursor": 77,
   "cycle": 0
 }
