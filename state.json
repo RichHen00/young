@@ -1,15 +1,15 @@
 {
   "current": {
-    "label": "The Geography of Ruin",
-    "kicker": "Straw hats and baggy grey trousers",
+    "label": "The Persistent Architecture of Violence",
+    "kicker": "Humid afternoons in a shared cabin",
     "paragraphs": [
-      75,
-      77
+      78,
+      79
     ],
     "note_words": 26,
-    "excerpt_words": 95,
-    "passage_chars": 1700,
-    "built": "2026-10-16T03:00:08+00:00",
+    "excerpt_words": 130,
+    "passage_chars": 1199,
+    "built": "2026-10-19T03:00:11+00:00",
     "file": "index.html"
   },
   "history": [
@@ -242,6 +242,16 @@
       "excerpt_words": 108,
       "words": 26,
       "built": "2026-10-15T03:00:09+00:00"
+    },
+    {
+      "n": 23,
+      "file": "tmp/0023.html",
+      "label": "The Geography of Ruin",
+      "eyebrow": "Straw hats and baggy grey trousers",
+      "note_words": 26,
+      "excerpt_words": 95,
+      "words": 26,
+      "built": "2026-10-16T03:00:08+00:00"
     }
   ],
   "source": {
@@ -326,7 +336,9 @@
     73,
     74,
     75,
-    76
+    76,
+    77,
+    78
   ],
   "output_hashes": [
     "63327c4620d4badb87f06ccef708f5bcf36d6b4b",
@@ -352,8 +364,9 @@
     "e4ebfcd2e8b77f7b1b0afe6e7431398ee871f141",
     "f4c0a9c1f74a1a508b79b8e830589ff8b0136d08",
     "64f993a2447d5387bb87b5eda5eb2d826bb3d07e",
-    "beaaea81222583f062c3800a0ad2efb7c9472bc0"
+    "beaaea81222583f062c3800a0ad2efb7c9472bc0",
+    "ed76847711639aeea5a3ec8a83e90a4d83c6b4b1"
   ],
-  "cursor": 77,
+  "cursor": 79,
   "cycle": 0
 }
