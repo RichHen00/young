@@ -1,15 +1,15 @@
 {
   "current": {
-    "label": "The Pride of Surviving the Plunge",
-    "kicker": "Freezing metal decks in January",
+    "label": "The Death of the Lone Traveller",
+    "kicker": "A puce knitted tie and ruins",
     "paragraphs": [
-      13,
-      16
+      17,
+      20
     ],
     "note_words": 28,
-    "excerpt_words": 121,
-    "passage_chars": 1889,
-    "built": "2026-10-22T03:00:07+00:00",
+    "excerpt_words": 92,
+    "passage_chars": 1472,
+    "built": "2026-10-23T03:00:09+00:00",
     "file": "index.html"
   },
   "history": [
@@ -62,6 +62,16 @@
       "excerpt_words": 105,
       "words": 29,
       "built": "2026-10-21T03:00:08+00:00"
+    },
+    {
+      "n": 5,
+      "file": "tmp/0005.html",
+      "label": "The Pride of Surviving the Plunge",
+      "eyebrow": "Freezing metal decks in January",
+      "note_words": 28,
+      "excerpt_words": 121,
+      "words": 28,
+      "built": "2026-10-22T03:00:07+00:00"
     }
   ],
   "source": {
@@ -85,7 +95,11 @@
     12,
     13,
     14,
-    15
+    15,
+    16,
+    17,
+    18,
+    19
   ],
   "output_hashes": [
     "3149131d45333500a14df6a688efdf94041f867e",
@@ -93,8 +107,9 @@
     "71ca80381aa1fca6401d57711efe180e849714e4",
     "d6b1292ec6c36e9edc5d345adda18443942701b7",
     "d4be4580677cb5765f1ed011cfede6a922d8c077",
-    "4512d26968d660892e6c26234710754456118f22"
+    "4512d26968d660892e6c26234710754456118f22",
+    "456839c8a8879c620b07f1d418ecbf735afbf217"
   ],
-  "cursor": 16,
+  "cursor": 20,
   "cycle": 0
 }
