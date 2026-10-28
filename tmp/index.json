@@ -69,6 +69,13 @@
       "eyebrow": "Glass cases and old ship's bells",
       "label": "The Vanishing Routes of the East",
       "built": "2026-10-26T04:00:08+00:00"
+    },
+    {
+      "n": 10,
+      "file": "tmp/0010.html",
+      "eyebrow": "A ballpoint pen and a cheap atlas",
+      "label": "The Calculated Risk of Traveller's Roulette",
+      "built": "2026-10-27T04:00:08+00:00"
     }
   ]
 }

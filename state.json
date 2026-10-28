@@ -1,15 +1,15 @@
 {
   "current": {
-    "label": "The Calculated Risk of Traveller's Roulette",
-    "kicker": "A ballpoint pen and a cheap atlas",
+    "label": "The Rituals of Anticipated Danger",
+    "kicker": "A metal suitcase and a money belt",
     "paragraphs": [
-      33,
-      35
+      36,
+      38
     ],
     "note_words": 30,
-    "excerpt_words": 116,
-    "passage_chars": 1903,
-    "built": "2026-10-27T04:00:08+00:00",
+    "excerpt_words": 108,
+    "passage_chars": 1690,
+    "built": "2026-10-28T10:14:38+00:00",
     "file": "index.html"
   },
   "history": [
@@ -112,6 +112,16 @@
       "excerpt_words": 105,
       "words": 29,
       "built": "2026-10-26T04:00:08+00:00"
+    },
+    {
+      "n": 10,
+      "file": "tmp/0010.html",
+      "label": "The Calculated Risk of Traveller's Roulette",
+      "eyebrow": "A ballpoint pen and a cheap atlas",
+      "note_words": 30,
+      "excerpt_words": 116,
+      "words": 30,
+      "built": "2026-10-27T04:00:08+00:00"
     }
   ],
   "source": {
@@ -154,7 +164,10 @@
     31,
     32,
     33,
-    34
+    34,
+    35,
+    36,
+    37
   ],
   "output_hashes": [
     "3149131d45333500a14df6a688efdf94041f867e",
@@ -167,8 +180,9 @@
     "4c72938575cd636933ef70a1149108250f486410",
     "61e02c37c1b138533fcb686e6ab2008d18bc761e",
     "b3e64ca645a2afaff2646753eca8c481969a97fb",
-    "3f56898597200e8c2ca27639fb1c1f61d9949859"
+    "3f56898597200e8c2ca27639fb1c1f61d9949859",
+    "f374a94600b8758a864cea7c12c1c48f13b2316c"
   ],
-  "cursor": 35,
+  "cursor": 38,
   "cycle": 0
 }
