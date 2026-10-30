@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="../">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Rituals of Permanent Departure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Spectral:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #1a1a1a;
+      --ink-muted: #666;
+      --ink-light: #888;
+      --page: #fff;
+      --line: #e5e5e5;
+      --measure: 720px;
+      --overlay-bg: rgba(18, 18, 18, 0.94);
+      --overlay-text: #f5f5f5;
+      --overlay-muted: #aaa;
+      --overlay-line: #333;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
+
+    body {
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 18px;
+      line-height: 1.75;
+      color: var(--ink);
+      background: var(--page);
+      padding: 64px 24px 120px;
+    }
+
+    .article {
+      max-width: var(--measure);
+      margin: 0 auto;
+    }
+
+    /* Kicker / Eyebrow */
+    .eyebrow {
+      font-family: "Inter", sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      margin-bottom: 16px;
+      line-height: 1.4;
+      padding-left: 16px;
+      border-left: 3px solid var(--line);
+    }
+
+    .eyebrow .sep {
+      margin: 0 8px;
+      color: var(--ink-light);
+    }
+
+    /* Headline */
+    .title {
+      font-family: "Spectral", Georgia, serif;
+      font-size: clamp(36px, 5.5vw, 56px);
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 28px;
+    }
+
+    /* Body paragraphs (intro) */
+    .intro {
+      font-family: "Inter", sans-serif;
+      font-size: 18px;
+      line-height: 1.8;
+      font-weight: 400;
+      font-style: italic;
+      color: var(--ink);
+      margin-bottom: 24px;
+    }
+
+    .intro:last-of-type {
+      margin-bottom: 32px;
+    }
+
+    /* Blockquote / Excerpts */
+    blockquote {
+      max-width: 100%;
+      margin: 32px 0 0;
+      padding: 0;
+      border: none;
+    }
+
+    blockquote p {
+      font-family: "Inter", sans-serif;
+      font-size: 19px;
+      line-height: 1.75;
+      font-weight: 400;
+      color: var(--ink);
+      margin: 0 0 16px;
+    }
+
+    blockquote p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Attribution / Source line */
+    .source {
+      font-family: "Spectral", Georgia, serif;
+      font-style: italic;
+      font-size: 17px;
+      line-height: 1.6;
+      color: var(--ink-muted);
+      margin-top: 48px;
+    }
+
+    /* Archive button (in article flow) */
+    .archive-btn {
+      display: inline-block;
+      margin-top: 48px;
+      font-family: "Inter", sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      text-decoration: none;
+      border-top: 1px solid var(--line);
+      padding-top: 24px;
+      cursor: pointer;
+      background: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: none;
+      transition: color 0.15s ease;
+    }
+
+    .archive-btn:hover {
+      color: var(--ink);
+    }
+
+    .archive-btn:focus-visible {
+      outline: 2px solid var(--ink);
+      outline-offset: 4px;
+      border-radius: 2px;
+    }
+
+    /* Archive Overlay */
+    .archive {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 100;
+      display: none;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      background: var(--overlay-bg);
+      color: var(--overlay-text);
+    }
+
+    .archive.is-open {
+      display: block;
+    }
+
+    .archive-inner {
+      width: min(100%, 860px);
+      margin: 0 auto;
+      padding: clamp(30px, 6vw, 72px) clamp(24px, 5vw, 48px);
+    }
+
+    .archive-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 24px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--overlay-line);
+    }
+
+    .archive-title,
+    .archive-close {
+      font-family: "Inter", sans-serif;
+      font-size: clamp(12px, 1vw, 14px);
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--overlay-muted);
+    }
+
+    .archive-close {
+      padding: 0;
+      border: 0;
+      background: none;
+      cursor: pointer;
+      transition: color 0.15s ease;
+    }
+
+    .archive-close:hover {
+      color: var(--overlay-text);
+    }
+
+    .archive-close:focus-visible {
+      outline: 2px solid var(--overlay-text);
+      outline-offset: 4px;
+      border-radius: 2px;
+    }
+
+    .archive-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .archive-list li {
+      border-bottom: 1px solid var(--overlay-line);
+    }
+
+    .archive-list a {
+      display: flex;
+      gap: 18px;
+      padding: 16px 0;
+      color: var(--overlay-text);
+      text-decoration: none;
+      font-family: "Inter", sans-serif;
+      font-size: clamp(15px, 1.4vw, 18px);
+      line-height: 1.35;
+      font-weight: 400;
+      letter-spacing: -0.015em;
+      transition: color 0.15s ease;
+    }
+
+    .archive-list a:hover {
+      color: var(--overlay-text);
+    }
+
+    .archive-list a:hover .archive-eyebrow {
+      text-decoration: underline;
+    }
+
+    .archive-list a:focus-visible {
+      outline: 2px solid var(--overlay-text);
+      outline-offset: 4px;
+    }
+
+    .archive-num {
+      flex: 0 0 auto;
+      min-width: 2.4em;
+      color: var(--overlay-muted);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .archive-eyebrow {
+      color: var(--overlay-muted);
+      transition: color 0.15s ease;
+    }
+
+    .archive-list a:hover .archive-eyebrow {
+      color: var(--overlay-text);
+    }
+
+    .archive-empty,
+    .archive-error {
+      margin: 22px 0 0;
+      font-family: "Inter", sans-serif;
+      font-size: clamp(14px, 1.3vw, 16px);
+    }
+
+    .archive-empty {
+      color: var(--overlay-muted);
+    }
+
+    .archive-error {
+      color: #ff6b6b;
+    }
+
+    /* Lock body scroll when overlay open */
+    body.is-locked {
+      overflow: hidden;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 640px) {@media (max-width: 640px) {}
+
+      .intro {
+        font-size: 18px;
+        font-style: italic;
+        line-height: 1.75;
+      }
+
+      blockquote p {
+        font-size: 17px;
+        line-height: 1.7;
+      }
+
+      .source {
+        font-size: 16px;
+      }
+
+      .archive-btn {
+        font-size: 12px;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ink: #f5f5f5;
+        --ink-muted: #aaa;
+        --ink-light: #888;
+        --page: #121212;
+        --line: #333;
+      }
+    }
+  </style>
+</head>
+<body>
+  <article class="article">
+    <p class="eyebrow">Oct 29 2026 04:00 • August morning at London airport</p>
+    <h1 class="title">The Rituals of Permanent Departure</h1>
+    <p class="intro">Armed with a flask of Scotch and a Vietnam-era anorak, Young stands among the morose holiday crowds, preparing for a voyage that feels less like a trip than a disappearance.</p>
+    <blockquote>
+<p>I took my old green Grenfell anorak from Vietnam days. I washed out my father’s hip flask and filled it with Scotch. A newly acquired Polaroid camera was to prove almost as useful to me in breaking the ice with shy and hostile strangers as beads were to explorers of old.</p>
+<p>London airport stifles euphoria at the best of times. Even so, I felt none of the elation you might expect in an adventurer departing for Eastern seas among crowds of August holidaymakers morosely contemplating the big boards announcing delays in their flights to Vienna, Rome and Lisbon.</p>
+<p>In thirty years of travel I have seldom begun a long journey without the feeling that I shall never return, and this beginning was no exception.</p>
+</blockquote>
+    <p class="source">&mdash; Slow Boats to China</p>
+    <a class="archive-btn" id="archive-home" href="index.html" style="text-decoration: none">Home</a>
+  </article>
+
+  <script type="application/json" id="archive-data">{
+  "entries": [
+    {
+      "n": 0,
+      "file": "tmp/0000.html",
+      "eyebrow": "Cornish cliffs and the Wreckers’ Coast",
+      "label": "The Boyhood Yearning for a Vanishing World",
+      "built": "2026-10-18T15:06:07+02:00"
+    },
+    {
+      "n": 1,
+      "file": "tmp/0001.html",
+      "eyebrow": "Damp floorboards and mouse droppings",
+      "label": "The Ghostly Aura Beneath the Summer Sun",
+      "built": "2026-10-18T15:06:30+02:00"
+    },
+    {
+      "n": 2,
+      "file": "tmp/0002.html",
+      "eyebrow": "Damp floorboards and mouse droppings",
+      "label": "The Geography of a Childhood Obsession",
+      "built": "2026-10-18T15:16:23+02:00"
+    },
+    {
+      "n": 3,
+      "file": "tmp/0003.html",
+      "eyebrow": "Winter gales and ancient headlands",
+      "label": "The Lure of a Weathered Grave",
+      "built": "2026-10-20T03:00:07+00:00"
+    },
+    {
+      "n": 4,
+      "file": "tmp/0004.html",
+      "eyebrow": "January, between dog and wolf",
+      "label": "The Cold Weight of a Dream Realized",
+      "built": "2026-10-21T03:00:08+00:00"
+    },
+    {
+      "n": 5,
+      "file": "tmp/0005.html",
+      "eyebrow": "Freezing metal decks in January",
+      "label": "The Pride of Surviving the Plunge",
+      "built": "2026-10-22T03:00:07+00:00"
+    },
+    {
+      "n": 6,
+      "file": "tmp/0006.html",
+      "eyebrow": "A puce knitted tie and ruins",
+      "label": "The Death of the Lone Traveller",
+      "built": "2026-10-23T03:00:09+00:00"
+    },
+    {
+      "n": 7,
+      "file": "tmp/0007.html",
+      "eyebrow": "A puce knitted tie like a hairnet",
+      "label": "The Extinction of the Lone Traveler",
+      "built": "2026-10-24T03:00:08+00:00"
+    },
+    {
+      "n": 8,
+      "file": "tmp/0008.html",
+      "eyebrow": "Glass cases and old ship's bells",
+      "label": "The Closing Window of the Imperial Age",
+      "built": "2026-10-25T04:00:08+00:00"
+    },
+    {
+      "n": 9,
+      "file": "tmp/0009.html",
+      "eyebrow": "Glass cases and old ship's bells",
+      "label": "The Vanishing Routes of the East",
+      "built": "2026-10-26T04:00:08+00:00"
+    },
+    {
+      "n": 10,
+      "file": "tmp/0010.html",
+      "eyebrow": "A ballpoint pen and a cheap atlas",
+      "label": "The Calculated Risk of Traveller's Roulette",
+      "built": "2026-10-27T04:00:08+00:00"
+    },
+    {
+      "n": 11,
+      "file": "tmp/0011.html",
+      "eyebrow": "A metal suitcase and a money belt",
+      "label": "The Rituals of Anticipated Danger",
+      "built": "2026-10-28T10:14:38+00:00"
+    }
+  ]
+}</script>
+
+  <div class="archive" id="archive" role="dialog" aria-modal="true" aria-label="Archive" aria-hidden="true">
+    <div class="archive-inner">
+      <div class="archive-head">
+        <span class="archive-title">Archive</span>
+        <button type="button" class="archive-close" id="archive-close">Close</button>
+      </div>
+      <ul class="archive-list" id="archive-list"></ul>
+      <p class="archive-empty" id="archive-empty" hidden>Nothing archived yet.</p>
+      <p class="archive-error" id="archive-error" hidden>Could not read the archive list.</p>
+    </div>
+  </div>
+
+  <script>
+    // Archive overlay. Two sources, in this order:
+    //   1. #archive-data — the manifest build.py embedded when it rendered this
+    //      page, so the list is already correct on load.
+    //   2. tmp/index.json — refetched on every open to pick up anything
+    //      archived since, and the only source on an archived page.
+    // Source 1 exists because fetch() is unavailable in some places a page gets
+    // opened (straight off disk), and that used to be indistinguishable from an
+    // empty archive. A failed refetch is only reported when it leaves us with
+    // no rows at all.
+    (function () {
+      var overlay = document.getElementById("archive");
+      var openBtn = document.getElementById("archive-open");
+      var closeBtn = document.getElementById("archive-close");
+      var list = document.getElementById("archive-list");
+      var empty = document.getElementById("archive-empty");
+      var error = document.getElementById("archive-error");
+      var opener = null;
+      var shown = 0;
+      if (!overlay || !openBtn || !closeBtn || !list) return;
+
+      function numberOf(entry) {
+        if (typeof entry.n === "number") return entry.n;
+        var m = String(entry.file || "").match(/(\d+)\.html$/);
+        return m ? Number(m[1]) : 0;
+      }
+
+      function normalise(data) {
+        var raw = Array.isArray(data) ? data : (data && data.entries) || [];
+        return raw
+          .filter(function (e) { return e && e.file; })
+          .map(function (e) {
+            return { n: numberOf(e), file: e.file, eyebrow: e.eyebrow || "", label: e.label || "" };
+          })
+          .sort(function (a, b) { return a.n - b.n; });
+      }
+
+      function render(entries) {
+        shown = entries.length;
+        list.textContent = "";
+        if (empty) empty.hidden = shown > 0;
+        if (error) error.hidden = true;
+        entries.forEach(function (entry) {
+          var row = document.createElement("li");
+          var link = document.createElement("a");
+          var num = document.createElement("span");
+          var label = document.createElement("span");
+          link.href = entry.file;
+          num.className = "archive-num";
+          num.textContent = numberOf(entry) + ".";
+          label.className = "archive-eyebrow";
+          label.textContent = entry.eyebrow || entry.label || entry.file;
+          link.appendChild(num);
+          link.appendChild(label);
+          row.appendChild(link);
+          list.appendChild(row);
+        });
+      }
+
+      function embedded() {
+        var el = document.getElementById("archive-data");
+        if (!el) return null;
+        try {
+          return normalise(JSON.parse(el.textContent));
+        } catch (e) {
+          return null;
+        }
+      }
+
+      function load() {
+        var inline = embedded();
+        if (inline) render(inline);
+        fetch("tmp/index.json", { cache: "no-store" })
+          .then(function (res) {
+            if (!res.ok) throw new Error("HTTP " + res.status);
+            return res.json();
+          })
+          .then(function (data) { render(normalise(data)); })
+          .catch(function () {
+            if (!shown && error) error.hidden = false;
+            if (!inline && empty) empty.hidden = true;
+          });
+      }
+
+      function open() {
+        opener = document.activeElement;
+        overlay.classList.add("is-open");
+        overlay.setAttribute("aria-hidden", "false");
+        document.body.classList.add("is-locked");
+        load();
+        closeBtn.focus();
+      }
+
+      function close() {
+        overlay.classList.remove("is-open");
+        overlay.setAttribute("aria-hidden", "true");
+        document.body.classList.remove("is-locked");
+        if (opener && opener.focus) opener.focus();
+      }
+
+      openBtn.addEventListener("click", open);
+      closeBtn.addEventListener("click", close);
+      overlay.addEventListener("click", function (e) { if (e.target === overlay) close(); });
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && overlay.classList.contains("is-open")) close();
+      });
+    }());
+  </script>
+</body>
+</html>

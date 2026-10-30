@@ -1,15 +1,15 @@
 {
   "current": {
-    "label": "The Rituals of Permanent Departure",
-    "kicker": "August morning at London airport",
+    "label": "The False Prophecy of the Timetable",
+    "kicker": "A glass of Fernet Branca in the lounge",
     "paragraphs": [
-      39,
-      41
+      42,
+      44
     ],
-    "note_words": 30,
-    "excerpt_words": 124,
-    "passage_chars": 1251,
-    "built": "2026-10-29T04:00:09+00:00",
+    "note_words": 28,
+    "excerpt_words": 130,
+    "passage_chars": 1749,
+    "built": "2026-10-30T04:00:13+00:00",
     "file": "index.html"
   },
   "history": [
@@ -132,6 +132,16 @@
       "excerpt_words": 108,
       "words": 30,
       "built": "2026-10-28T10:14:38+00:00"
+    },
+    {
+      "n": 12,
+      "file": "tmp/0012.html",
+      "label": "The Rituals of Permanent Departure",
+      "eyebrow": "August morning at London airport",
+      "note_words": 30,
+      "excerpt_words": 124,
+      "words": 30,
+      "built": "2026-10-29T04:00:09+00:00"
     }
   ],
   "source": {
@@ -180,7 +190,10 @@
     37,
     38,
     39,
-    40
+    40,
+    41,
+    42,
+    43
   ],
   "output_hashes": [
     "3149131d45333500a14df6a688efdf94041f867e",
@@ -195,8 +208,9 @@
     "b3e64ca645a2afaff2646753eca8c481969a97fb",
     "3f56898597200e8c2ca27639fb1c1f61d9949859",
     "f374a94600b8758a864cea7c12c1c48f13b2316c",
-    "88629a650b7db2ac7cab30aa260e830ae40b415a"
+    "88629a650b7db2ac7cab30aa260e830ae40b415a",
+    "370f2cfbbde95d269b9237f6a158e4a99fa9a25e"
   ],
-  "cursor": 41,
+  "cursor": 44,
   "cycle": 0
 }
