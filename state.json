@@ -1,15 +1,15 @@
 {
   "current": {
-    "label": "The False Prophecy of the Timetable",
-    "kicker": "A glass of Fernet Branca in the lounge",
+    "label": "The Gap Between the Postcard and the Pavement",
+    "kicker": "Six long lines at passport control",
     "paragraphs": [
-      42,
-      44
+      45,
+      47
     ],
-    "note_words": 28,
-    "excerpt_words": 130,
-    "passage_chars": 1749,
-    "built": "2026-10-30T04:00:13+00:00",
+    "note_words": 27,
+    "excerpt_words": 95,
+    "passage_chars": 1599,
+    "built": "2026-10-31T04:00:09+00:00",
     "file": "index.html"
   },
   "history": [
@@ -142,6 +142,16 @@
       "excerpt_words": 124,
       "words": 30,
       "built": "2026-10-29T04:00:09+00:00"
+    },
+    {
+      "n": 13,
+      "file": "tmp/0013.html",
+      "label": "The False Prophecy of the Timetable",
+      "eyebrow": "A glass of Fernet Branca in the lounge",
+      "note_words": 28,
+      "excerpt_words": 130,
+      "words": 28,
+      "built": "2026-10-30T04:00:13+00:00"
     }
   ],
   "source": {
@@ -193,7 +203,10 @@
     40,
     41,
     42,
-    43
+    43,
+    44,
+    45,
+    46
   ],
   "output_hashes": [
     "3149131d45333500a14df6a688efdf94041f867e",
@@ -209,8 +222,9 @@
     "3f56898597200e8c2ca27639fb1c1f61d9949859",
     "f374a94600b8758a864cea7c12c1c48f13b2316c",
     "88629a650b7db2ac7cab30aa260e830ae40b415a",
-    "370f2cfbbde95d269b9237f6a158e4a99fa9a25e"
+    "370f2cfbbde95d269b9237f6a158e4a99fa9a25e",
+    "7f74aba532be4ed2a5d1d7bd63d24b50cbb5fe39"
   ],
-  "cursor": 44,
+  "cursor": 47,
   "cycle": 0
 }
