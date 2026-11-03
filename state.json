@@ -1,15 +1,15 @@
 {
   "current": {
-    "label": "The Luxury of Slipping Into Neutral",
-    "kicker": "A marble-topped bar in Athens",
+    "label": "The Grim Routine of Revolution",
+    "kicker": "A crowded lobby in Athens",
     "paragraphs": [
-      51,
-      52
+      53,
+      55
     ],
-    "note_words": 30,
-    "excerpt_words": 122,
-    "passage_chars": 1646,
-    "built": "2026-11-02T04:00:08+00:00",
+    "note_words": 29,
+    "excerpt_words": 93,
+    "passage_chars": 1407,
+    "built": "2026-11-03T04:00:08+00:00",
     "file": "index.html"
   },
   "history": [
@@ -172,6 +172,16 @@
       "excerpt_words": 117,
       "words": 29,
       "built": "2026-11-01T04:00:08+00:00"
+    },
+    {
+      "n": 16,
+      "file": "tmp/0016.html",
+      "label": "The Luxury of Slipping Into Neutral",
+      "eyebrow": "A marble-topped bar in Athens",
+      "note_words": 30,
+      "excerpt_words": 122,
+      "words": 30,
+      "built": "2026-11-02T04:00:08+00:00"
     }
   ],
   "source": {
@@ -231,7 +241,10 @@
     48,
     49,
     50,
-    51
+    51,
+    52,
+    53,
+    54
   ],
   "output_hashes": [
     "3149131d45333500a14df6a688efdf94041f867e",
@@ -250,8 +263,9 @@
     "370f2cfbbde95d269b9237f6a158e4a99fa9a25e",
     "7f74aba532be4ed2a5d1d7bd63d24b50cbb5fe39",
     "6767925715708925aa89d77cd3eb6a7f9af18019",
-    "8bf15d28e63bdbb9b67fe08662bfc7944257255b"
+    "8bf15d28e63bdbb9b67fe08662bfc7944257255b",
+    "77f3366c8e8586d1768964b9704088747b72012e"
   ],
-  "cursor": 52,
+  "cursor": 55,
   "cycle": 0
 }
