@@ -1,15 +1,15 @@
 {
   "current": {
-    "label": "The Shared Idiom of British Discomfort",
-    "kicker": "Metal bunks and olive-drab armchairs",
+    "label": "The Ghost of War in a Sunlit Land",
+    "kicker": "Eighteen knots through the Cyclades",
     "paragraphs": [
-      72,
-      74
+      75,
+      77
     ],
-    "note_words": 28,
-    "excerpt_words": 110,
-    "passage_chars": 1290,
-    "built": "2026-11-08T04:00:15+00:00",
+    "note_words": 29,
+    "excerpt_words": 95,
+    "passage_chars": 1700,
+    "built": "2026-11-09T04:00:09+00:00",
     "file": "index.html"
   },
   "history": [
@@ -232,6 +232,16 @@
       "excerpt_words": 112,
       "words": 29,
       "built": "2026-11-07T04:00:09+00:00"
+    },
+    {
+      "n": 22,
+      "file": "tmp/0022.html",
+      "label": "The Shared Idiom of British Discomfort",
+      "eyebrow": "Metal bunks and olive-drab armchairs",
+      "note_words": 28,
+      "excerpt_words": 110,
+      "words": 28,
+      "built": "2026-11-08T04:00:15+00:00"
     }
   ],
   "source": {
@@ -313,7 +323,10 @@
     70,
     71,
     72,
-    73
+    73,
+    74,
+    75,
+    76
   ],
   "output_hashes": [
     "3149131d45333500a14df6a688efdf94041f867e",
@@ -338,8 +351,9 @@
     "6482686c9849a1e7ca6db3a06d1563344aeb1118",
     "98ae0d0a3fbc1df7be490a2d6cc3fead28ef9113",
     "5bbb8e2faa039ff94e13117eed7cb4b8d75fe475",
-    "0d9532040179b6508a95818a38656a3e83f78e04"
+    "0d9532040179b6508a95818a38656a3e83f78e04",
+    "66fbe66319de7573caf81218be53b633dd975165"
   ],
-  "cursor": 74,
+  "cursor": 77,
   "cycle": 0
 }
